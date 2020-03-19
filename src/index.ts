@@ -14,3 +14,5 @@ for (let match of matchReader.result) {
     winningGames++;
   }
 }
+
+console.log(`Man United won ${winningGames} games.`);
