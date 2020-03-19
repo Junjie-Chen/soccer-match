@@ -1,6 +1,7 @@
 import fs from 'fs';
+import { Reader } from './MatchReader';
 
-export class FileReader {
+export class FileReader implements Reader {
   result: string[][] = [];
 
   constructor(public file: string) {}
