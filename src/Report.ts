@@ -3,6 +3,10 @@ import { Html } from './logger/Html';
 // import { Console } from './logger/Console';
 import { MatchType } from './MatchType';
 
+export interface Analyzer {
+  analyze(matches: MatchType[]): string;
+}
+
 export class Report {
   static createReport(team: string, file: string): Report {
     return new Report(new Winner(team), new Html(file));
