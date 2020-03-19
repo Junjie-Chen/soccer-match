@@ -3,6 +3,11 @@ import { MatchType } from './MatchType';
 import { parseDate } from './utils';
 import { MatchResult } from './MatchResult';
 
+export interface Reader {
+  result: string[][];
+  read(): void;
+}
+
 export class MatchReader {
   static createMatchReader(file: string): MatchReader {
     return new MatchReader(new FileReader(file));
