@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Junjie-Chen/soccer-match/issues"
   },
-  "homepage": "https://github.com/Junjie-Chen/soccer-match#readme"
+  "homepage": "https://github.com/Junjie-Chen/soccer-match#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
 }
