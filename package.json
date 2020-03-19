@@ -24,6 +24,7 @@
     "nodemon": "^2.0.2"
   },
   "dependencies": {
+    "@types/node": "^13.9.2",
     "concurrently": "^5.1.0"
   }
 }
