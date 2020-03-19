@@ -17,7 +17,7 @@ export class Report {
     // return new Report(new Winner(team), new Console());
   }
 
-  constructor(public analyzer: Analyzer, public logger) {};
+  constructor(public analyzer: Analyzer, public logger: Logger) {};
 
   analyzeAndLog(matches: MatchType[]): void {
     this.logger.log(this.analyzer.analyze(matches));
