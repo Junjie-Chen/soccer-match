@@ -7,4 +7,6 @@ export class Report {
     return new Report(new Winner(team), new Html(file));
     // return new Report(new Winner(team), new Console());
   }
+
+  constructor(public analyzer, public logger) {};
 }
