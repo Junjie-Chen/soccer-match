@@ -15,7 +15,7 @@ export class MatchReader {
 
   matches: MatchType[] = [];
 
-  constructor(public reader) {}
+  constructor(public reader: Reader) {}
 
   load(): void {
     this.reader.read();
