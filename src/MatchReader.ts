@@ -7,4 +7,6 @@ export class MatchReader {
   }
 
   matches: MatchType[] = [];
+
+  constructor(public reader) {}
 }
