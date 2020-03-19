@@ -1,6 +1,7 @@
 import fs from 'fs';
+import { Logger } from '../Report';
 
-export class Html {
+export class Html implements Logger {
   constructor(public file: string) {}
 
   log(analysis: string): void {
