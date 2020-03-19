@@ -7,6 +7,10 @@ export interface Analyzer {
   analyze(matches: MatchType[]): string;
 }
 
+export interface Logger {
+  log(analysis: string): void;
+}
+
 export class Report {
   static createReport(team: string, file: string): Report {
     return new Report(new Winner(team), new Html(file));
