@@ -1,7 +1,8 @@
+import { Analyzer } from '../Report';
 import { MatchType } from '../MatchType';
 import { MatchResult } from '../MatchResult';
 
-export class Winner {
+export class Winner implements Analyzer {
   constructor(public team: string) {}
 
   analyze(matches: MatchType[]): string {
